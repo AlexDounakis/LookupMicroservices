@@ -1,6 +1,6 @@
 ﻿using IPLookup.Clients;
-using IPLookup.Configurations;
 using IPLookup.Exceptions;
+using IPLookup.Handlers;
 using Polly;
 using Polly.Fallback;
 using Polly.Retry;

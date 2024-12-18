@@ -1,5 +1,5 @@
 using AutoMapper;
-using BatchProcessing.Exceptions;
+using BatchProcessing.Handlers;
 using BatchProcessing.Services;
 using Hangfire;
 using Hangfire.MemoryStorage;

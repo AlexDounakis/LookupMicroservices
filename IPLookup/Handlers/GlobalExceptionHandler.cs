@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BatchProcessing.Exceptions
+namespace IPLookup.Handlers
 {
     public class GlobalExceptionHandler : IExceptionHandler
     {

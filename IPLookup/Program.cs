@@ -1,5 +1,5 @@
 using IPLookup.Configurations;
-using IPLookup.Exceptions;
+using IPLookup.Handlers;
 using IPLookup.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Models;

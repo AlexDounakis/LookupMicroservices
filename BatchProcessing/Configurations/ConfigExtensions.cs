@@ -1,6 +1,6 @@
 ﻿using BatchProcessing.Clients;
-using BatchProcessing.Configurations;
 using BatchProcessing.Exceptions;
+using BatchProcessing.Handlers;
 using Polly;
 using Polly.Fallback;
 using Polly.Retry;

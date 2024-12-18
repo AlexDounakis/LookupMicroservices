@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Headers;
 
-namespace BatchProcessing.Configurations
+namespace BatchProcessing.Handlers
 {
     public class LoggingDelegatingHandler : DelegatingHandler
     {
@@ -28,7 +28,7 @@ namespace BatchProcessing.Configurations
                 foreach (var header in req.Content.Headers)
                     _logger.LogInformation($"{msg} {header.Key}: {string.Join(", ", header.Value)}");
 
-                if (req.Content is StringContent || this.IsTextBasedContentType(req.Headers) || this.IsTextBasedContentType(req.Content.Headers))
+                if (req.Content is StringContent || IsTextBasedContentType(req.Headers) || IsTextBasedContentType(req.Content.Headers))
                 {
                     var result = await req.Content.ReadAsStringAsync();
 
@@ -59,7 +59,7 @@ namespace BatchProcessing.Configurations
                 foreach (var header in resp.Content.Headers)
                     _logger.LogInformation($"{msg} {header.Key}: {string.Join(", ", header.Value)}");
 
-                if (resp.Content is StringContent || this.IsTextBasedContentType(resp.Headers) || this.IsTextBasedContentType(resp.Content.Headers))
+                if (resp.Content is StringContent || IsTextBasedContentType(resp.Headers) || IsTextBasedContentType(resp.Content.Headers))
                 {
                     start = DateTime.Now;
                     var result = await resp.Content.ReadAsStringAsync();

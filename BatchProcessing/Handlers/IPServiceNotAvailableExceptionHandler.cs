@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Diagnostics;
+﻿using BatchProcessing.Exceptions;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BatchProcessing.Exceptions
+namespace BatchProcessing.Handlers
 {
     public class IPServiceNotAvailableExceptionHandler : IExceptionHandler
     {

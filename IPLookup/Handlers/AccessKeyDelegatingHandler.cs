@@ -1,6 +1,7 @@
-﻿using Microsoft.Extensions.Options;
+﻿using IPLookup.Configurations;
+using Microsoft.Extensions.Options;
 
-namespace IPLookup.Configurations
+namespace IPLookup.Handlers
 {
     public class AccessKeyDelegatingHandler : DelegatingHandler
     {

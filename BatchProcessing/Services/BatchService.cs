@@ -25,7 +25,7 @@ namespace BatchProcessing.Services
         {
             ArgumentNullException.ThrowIfNull(batchRequest);
 
-            var batchId = new Guid("8f85278c-c0e4-484a-be09-049b4d96a945"); //Guid.NewGuid();
+            var batchId = Guid.NewGuid();
 
             var chunks = batchRequest.IpAddresses
                    .Where(ip => _cacheService.GetIpDetails(ip) == null)
@@ -79,7 +79,7 @@ namespace BatchProcessing.Services
             {
                 record.Status = "Completed";
             }
-            else if (jobStatuses.Any(status => status == "Processing" || status == "Enqueued"))
+            else
             {
                 record.Status = "In Progress";
             }

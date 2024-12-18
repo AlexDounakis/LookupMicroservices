@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Diagnostics;
+﻿using IPLookup.Exceptions;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace IPLookup.Exceptions
+namespace IPLookup.Handlers
 {
     public class IPServiceNotAvailableExceptionHandler : IExceptionHandler
     {
