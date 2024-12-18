@@ -1,0 +1,34 @@
+
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.userprefs
+*.log
+*.tlog
+*.vspscc
+.vscode/
+.DS_Store
+.idea/
+*.sln.iml
+*.DotSettings.user
+*.DotSettings
+packages/
+*.nupkg
+# Uncomment if you use the global packages folder (NuGet 3+):
+# **/global-packages/
+
+project.lock.json
+project.assets.json
+*.dll
+*.pdb
+*.exe
+ApplicationInsights.config
+ApplicationInsightsTelemetry.config
+wwwroot/
+*.PublishProfiles/
+*.db
+appsettings.*.json
+secrets.json

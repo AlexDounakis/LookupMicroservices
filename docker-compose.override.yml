@@ -1,0 +1,23 @@
+# services:
+#   batchprocessing:
+#     environment:
+#       - ASPNETCORE_ENVIRONMENT=Development
+#       - ASPNETCORE_HTTP_PORTS=8080
+ #     - ASPNETCORE_URLS: "http://0.0.0.0:8080"
+#     ports:
+#       - "8080"
+#       - "8081"
+#     volumes:
+#       - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+#       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+#   iplookup:
+#     environment:
+#       - ASPNETCORE_ENVIRONMENT=Development
+#       - ASPNETCORE_HTTP_PORTS=8090
+#       - ASPNETCORE_HTTPS_PORTS=8091
+#     ports:
+#       - "8080"
+#       - "8081"
+#     volumes:
+#       - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+#       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro

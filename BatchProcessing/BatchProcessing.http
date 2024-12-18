@@ -1,0 +1,6 @@
+@BatchProcessing_HostAddress = http://localhost:5189
+
+GET {{BatchProcessing_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
